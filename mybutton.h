@@ -10,6 +10,9 @@ class MyButton : public QPushButton
 public:
     MyButton(QWidget *parent = nullptr);
 
+signals:
+    void mouseEntered(bool mouseHasEntered);
+
 protected:
     virtual void enterEvent(QEvent *e)override;
     virtual void leaveEvent(QEvent *e)override;
